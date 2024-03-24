@@ -1,0 +1,1855 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+
+}
+/*      Navbar        */
+
+.navbarContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+}
+.logoPic{
+    width: 120px;
+}
+.uk{
+    width: 30px;
+    border-radius: 50%;
+    height: 2rem;
+}
+.rightNavbar{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    
+}
+.rightNavbar button{
+    background-color: white;
+    width: 6rem;
+    height: 2.5rem;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 4px;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 16px;
+}
+.rightNavbar button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgb(245, 245, 245);
+}
+.hr1{
+    width: 100%;  
+    border: 0.02rem solid rgb(222, 222, 222);
+
+}
+.barSideFirst{
+    width: 2rem;
+    display: none;
+}
+
+.rightNavbarM{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    
+}
+@media screen and (max-width:1000px) {
+    .navbarContainer{
+        width: 95%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:670px){
+    .rightNavbar button{
+        width: 5rem;
+        height: 2rem;
+        font-size: 14px;
+        margin-left: 1rem;
+    }
+    .uk{
+        width: 1.6rem;
+        height: 1.5rem;
+    }
+    .logoPic{
+        width: 110px;
+    }
+    .rightNavbar{
+        width: 220px;
+    }
+}
+@media screen and (max-width:400px) {
+    .barSideFirst {
+        display: block;
+        margin-left: auto;
+        padding-right: 1rem;
+    }
+
+    .rightNavbarM{
+        display: none;
+    }
+    .rightNavbar{
+        width: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*   Nabvar after Connection */
+.personPicture{
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 3px solid rgb(166, 165, 165);
+    margin-left: 2rem;
+}
+.rightNavbarA{
+    
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logoutBtn{
+    background-color: white;
+    width: 6rem;
+    height: 2.5rem;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 4px;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 16px;
+}
+.logoutDiv{
+    display: flex;
+    /* background-color: #0066CD; */
+    padding-right: 1rem;
+}
+
+/* Navbar two */
+
+.containerNavbarTWo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 0.5rem;
+}
+.itemNavbarTwo{
+    width: 5rem;
+    text-align: center;
+}
+.itemNavbarTwoPicture{
+    width: 3rem;
+}
+.hr2{
+    width: 100%;  
+    border: 0.02rem solid rgb(222, 222, 222);
+    margin-top: 10px;
+
+}
+.containerNavbarTWo a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+
+
+  /* Hover state */
+.containerNavbarTWo a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left center;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.containerNavbarTWo a:hover::before,
+.containerNavbarTWo a:focus::before {
+    transform: scaleX(1); /* Expand to full width */
+}
+@media screen and (max-width:1000px) {
+    .itemNavbarTwoPicture{
+        width: 2rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .itemNavbarTwoPicture{
+        width: 1.5rem;
+    }
+}
+  
+
+
+
+/* Home page */
+.containerhome{
+    position: absolute;
+    width: 100%;
+}
+.picHome {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: url('../../public/images/travel2.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1; /* Increase z-index to bring it above the other element */
+  }
+  
+  .leftSideHomePage {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 40%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    width: 50rem;
+    z-index: 2; /* Place it above the image */
+  }
+  
+.leftSideHomePage p{
+    width: 70%;
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.leftSideHomePage span{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.buttonToStart{
+    width: 22rem;
+    height: 5rem;
+    border-radius: 8px;
+    border: 1px solid #7FD4F8;
+    background: rgba(0, 170, 242, 0.50);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.secondPartHomePage{
+    margin-top: 1rem;
+    padding-left: 3rem;
+    padding-left: 3rem;
+}
+.secondPartHomePage .titleCont{
+    font-size: 40px;
+    padding-left: 5rem;
+}
+.secondPartHomePage .parCont{
+    color: #515151;
+    padding-left: 5rem;
+    font-size: 18px;
+}
+.firstPartPictureHomePage{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.firstPartPictureHomePage .container{
+    max-height: 20rem;
+    width: 46.2%;
+}
+.firstPartPictureHomePage .container img{
+
+    width: 100%;
+    max-height: 20rem;
+    border-radius: 3px;
+    box-shadow: 6px 6px 13px -1px rgba(0, 0, 0, 0.25);
+}
+.firstPartPictureHomePage .container:hover{
+    cursor: pointer;
+    scale: 1.01;
+}
+.secondPartPictureHomePage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.secondPartPictureHomePage .SecondContainer{
+    width: 30%;
+    margin-top: 1rem;
+    border-radius: 3px;
+    box-shadow: 6px 6px 13px -1px rgba(0, 0, 0, 0.25);
+    max-height: 15rem;
+}
+.secondPartPictureHomePage .SecondContainer:hover{
+    cursor: pointer;
+    scale: 1.01;
+}
+
+.secondPartPictureHomePage .SecondContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+    position: relative;
+}
+
+.container p {
+    position: absolute;
+    top: 10px;
+    left: 1rem;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+}
+
+.container img {
+    position: relative;
+    z-index: 0;
+}
+
+
+
+.SecondContainer {
+    position: relative;
+}
+
+.SecondContainer p {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 28px;
+    color: white;
+    z-index: 1;
+}
+
+.SecondContainer img {
+    position: relative;
+    z-index: 0;
+}
+
+
+@media screen and (max-width:1200px) {
+    .secondPartHomePage .titleCont{
+        font-size: 35px;
+    }
+    .secondPartHomePage .parCont{
+        font-size: 16px;
+    }
+    .SecondContainer p{
+        font-size: 24px;
+    }
+    .container p{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .secondPartHomePage .titleCont{
+        font-size: 30px;
+            padding-left: 4rem;
+
+    }
+    .secondPartHomePage .parCont{
+
+        font-size: 14px;
+            padding-left: 4rem;
+    }
+    .SecondContainer p{
+        font-size: 22px;
+    }
+    .container p{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:800px) {
+    .secondPartHomePage .titleCont{
+        font-size: 25px;
+            padding-left: 3rem;
+
+    }
+    .secondPartHomePage .parCont{
+
+        font-size: 14px;
+            padding-left: 3rem;
+    }
+    .SecondContainer p{
+        font-size: 18px;
+        top: 0.5rem;
+    }
+    .container p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .secondPartHomePage .titleCont{
+        font-size: 20px;
+        padding-left: 1rem;
+
+    }
+    .secondPartHomePage .parCont{
+        font-size: 14px;
+        padding-left: 1rem;
+    }
+    .SecondContainer p{
+        font-size: 15px;
+        top: 0.3rem;
+    }
+    .container p{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+/* HomePage vol2 */
+
+
+.rightPartContainerHome p{
+    font-size: 35px;
+}
+.rightPartContainerHome span{
+    font-size: 40px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+.rightPartContainerHome{
+    position: absolute;
+    top: 22rem;
+    left: 5rem;
+    padding: 1rem;
+    display: grid;
+    width: auto;
+}
+.buttonToStartSecond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7FD4F8;
+    width: 17rem;
+    height: 4rem;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.firstContainerHome img{
+    width: 100%;
+    height: 75vh; /* Sets the height to cover the viewport height */
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:1200px) {
+    .rightPartContainerHome p{
+        font-size: 30px;
+    }
+    .rightPartContainerHome span{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .buttonToStartSecond{
+        width: 16rem;
+        height: 3.5rem;
+        font-size: 13px;
+    }
+    .rightPartContainerHome{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .rightPartContainerHome p{
+        font-size: 25px;
+    }
+    .rightPartContainerHome span{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .buttonToStartSecond{
+        width: 15.5rem;
+        height: 3.2rem;
+        font-size: 13px;
+    }
+    .rightPartContainerHome{
+        left: 4rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .rightPartContainerHome p{
+        font-size: 20px;
+    }
+    .rightPartContainerHome span{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .buttonToStartSecond{
+        width: 14rem;
+        height: 3rem;
+        font-size: 12px;
+    }
+    .rightPartContainerHome{
+        left: 2rem;
+    }
+}
+
+
+
+/* Footer  */
+
+.Footer{
+    margin-top: 2rem;
+    width: 100%;
+    padding-bottom: 10vh;
+    background-color: #498ACD;
+}
+.contactusLine{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+    width: 100%;
+    border-bottom: 1px solid blue;
+
+    background-color: #0066CD;
+    height: 100px;
+}
+.reseau{
+    background-color: transparent;
+    display: flex;
+    width: 15rem;
+    align-items: center;
+}
+.reseau img{
+    background-color: transparent;
+    width: 60px; 
+    margin-left: 40px;
+
+}
+.reseau p{
+    text-align: center;
+    background-color: transparent;
+    color: white;
+
+}
+
+.infosFooter{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+
+}
+.aboutUsInfos{
+    width: 15%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+}
+.aboutUsInfos h1{
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+}
+.aboutUsInfos p{
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 13px;
+}
+.aboutUsInfos a{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.aboutUsInfos a:hover{
+    color: blue;
+}
+
+
+@media screen and (max-width : 970px ) {
+    
+    .aboutUsInfos{
+        width: 200px;
+
+        margin-top: 1rem;
+    }
+    .contactusLine{
+        height: 160px;
+    }
+}
+
+
+
+
+
+
+
+/* Login page */
+.containerLogin{
+    width: 60%;
+    /* background-color: #b6adad; */
+    max-width: 500px;
+    margin: auto;
+    padding: 1rem;
+}
+.logoPng{
+    padding-top: 1rem;
+    width: 300px;
+    margin: auto;
+    display: flex;
+}
+.btnGoogleFb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.SignInWithFb{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #FFF;
+    width: 230px;
+    text-align: center;
+    justify-content: center;
+    height: 3rem;
+}
+.SignInWithFb img{
+    width: 30px;
+    padding-right: 0.5rem;
+}
+.containerLogin h3{
+    text-align: center;
+    color: rgba(26, 23, 23, 0.38);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 4.32px;
+    padding: 1rem;
+}
+.containerLogin h1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.formLogin{
+    display: grid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.formLogin a{
+    width: 100%;
+    /* background-color: #0066CD; */
+}
+.formLogin button{
+    width: 100%;
+}
+
+.formLogin input{
+    padding: 0.5rem;
+    font-size: 15px;
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(26, 23, 23, 0.38);;
+}
+
+/* input:focus {
+    border-bottom: 2px solid black;
+    background-color: #0066CD;
+  }
+ */
+
+
+#submitLogin{
+    border-radius: 8px;
+    background: #279574;
+    color: white;
+    border: none;
+    height: 3rem;
+    font-size: 18px;
+    width: 100%;
+}
+
+.containerLogin p{
+    color: rgba(0, 0, 0, 0.32);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.containerLogin a{
+    color: rgba(84, 190, 184, 1);
+    text-decoration: none;
+
+}
+
+@media screen and (max-width:788px) {
+    .logoPng{
+        width: 250px;
+    }
+    .btnGoogleFb{
+        width: 100%;
+        /* background-color: #0066CD; */
+        display: grid;
+        justify-content: center;
+        margin: auto;
+    }
+    .SignInWithFb{
+        /* background-color: #0066CD; */
+        width: 100%;
+        margin: auto;
+        margin-top: 0.5rem;
+    }
+    .containerLogin h1{
+        font-size: 20px;
+    }
+    .containerLogin p{
+        font-size: 18px;
+    }
+    .containerLogin h3{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:458px){
+    .logoPng{
+        width: 200px;
+    }
+    .containerLogin h1{
+        font-size: 18px;
+    }
+    .containerLogin p{
+        font-size: 16px;
+    }
+    .containerLogin h3{
+        font-size: 16px;
+    }
+}
+
+
+
+
+/* Flights Search */
+
+.containerFlights img{
+        width: 100%;
+        min-height: 30rem;
+        height: 75vh; /* Sets the height to cover the viewport height */
+        object-fit: cover;
+}
+.FlightsSearchInfos{
+    position: absolute;
+    top: 17rem;
+    width: 100%;
+}
+.FlightsSearchInfos input{
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid rgb(133, 131, 131);
+    height: 1rem;
+    width: 15rem;
+    margin-top: 1rem;
+    font-size: 17px;
+}
+.FlightsSearchInfos form{
+    /* background-color: #0066CD; */
+    width: 18rem;
+    text-align: center;
+    margin: auto;
+}
+.conta{
+    width: 60%;
+    margin: auto;
+    /* background-color: #0066CD; */
+    text-align: center;
+}
+.formContainerFlightsSearch{
+    padding-top: 4rem;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.formContainerFlightsSearch .individualDivInput{
+    background-color: #0066CD;
+}
+.submitButtonFightsSearch{
+    text-align: center;
+    margin-top: 3rem;
+}
+.submitButtonFightsSearch input{
+    height: 3rem;
+    background-color: #83BCFF;
+    border: none;
+    border-radius: 15px;
+    width: 10rem;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1100px){
+    .FlightsSearchInfos{
+        top: 15rem;
+    }
+    .FlightsSearchInfos h1{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .FlightsSearchInfos{
+        top: 14rem;
+    }
+    .FlightsSearchInfos h1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .FlightsSearchInfos{
+        top: 13rem;
+    }
+    .FlightsSearchInfos input{
+        width: 90%;
+    }
+    .FlightsSearchInfos h1{
+        font-size: 20px;
+    }
+    .formContainerFlightsSearch{
+        padding-top: 1.5rem;
+    }
+    .submitButtonFightsSearch{
+        margin-top: 1.5rem;
+    }
+    .submitButtonFightsSearch input{
+        width: 40%;
+    }
+
+}
+
+
+
+
+
+/* Flights Results */
+
+.FlightsSearchVol2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+.FlightsSearchVol2 form{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #279574; */
+}
+
+.formFlights input{
+    width: 100%;
+
+}
+
+.FlightsSearchVol2 form input{
+    /* background-color: #0066CD; */
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid rgb(133, 131, 131);
+    height: 1rem;
+    /* width: 50%; */
+    margin-top: 1rem;
+    font-size: 17px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FlightsSearchVol2 a{
+    width: 10rem;
+    /* background-color: #279574; */
+}
+.formFlights{
+    /* background-color: #0066CD; */
+    width: 15rem;
+}
+.formFlights input{
+    width: 60%;
+}
+.individualDivInput{
+    background-color: blue;
+}
+.FlightsSearchVol2 .submitFlightsResultsVol2{
+     height: 3rem;
+    background-color: #83BCFF;
+    border: none;
+    border-radius: 15px;
+    width: 10rem;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.containerResultsFlights{
+    display: flex;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.leftSideResultsFlights{
+    width: 30%;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+.itemFilter{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.itemFilter input{
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+}
+
+
+.rangePriceFilter{
+    margin-top: 1rem;
+}
+
+.slider-container {
+    width: 80%;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: #070707;
+    outline: none;
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    border: 1px solid rgb(95, 95, 95);
+  }
+
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background: #8e8e8e;
+    cursor: pointer;
+}
+.priceBar{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.minPrice{
+    color: #878788;
+    font-size: 11px;
+}
+
+
+
+  
+
+.rightSideResultsFlights{
+    width: 60%;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+
+}
+.resultsStatistics{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+.resultsStatistics p{
+    color: #878788;
+}
+.resultsStatistics span{
+    color: #878788;
+}
+.resultsStatistics select{
+    padding: 0.2rem;
+    border: none;
+    color: #878788;
+    font-size: 15px;
+}
+
+
+.itemFlightsResults{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    border: 1px solid rgb(138, 137, 137);
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 0.8rem;
+}
+.itemFlightsResults img{
+    width: 70px;
+}
+.middlemiddleFlightsResults{
+    text-align: center;
+    padding-left:1rem ;
+    padding-right: 1rem;
+    color: #696969;
+}
+
+.middleItelFlightsResults{
+    /* background-color: #0066CD; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+.middleItelFlightsResults p{
+    font-size: 25px;
+    font-weight: 601;
+}
+
+#valueHoursFlight{
+    /* background-color: blue; */
+    margin-left: auto;
+    color: #696969;
+
+}
+
+
+.rightItemFlightsResults{
+    padding-top: 0.5rem;
+    border-left: 2px solid rgb(160, 159, 159);
+    padding-left: 1rem;
+    height: 10vh;
+    display: grid;
+    width: 15%;
+}
+.wifi{
+    color: rgb(4, 205, 78);
+    font-size: 10px;
+    font-weight: bold;
+}
+.priceFight{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+}
+.selectItemFlightsResults{
+    background-color: #83BCFF;
+    border: none;
+    height: 2rem;
+    font-size: 21px;
+    color: #0d0d0d;
+    border-radius: 2px;
+}
+.barSideSecond{
+    width: 2rem;
+    display: none;
+}
+
+
+.sideBar{
+    font-weight: bolder;
+    width: 35%;
+    background-color: #212121;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 17rem;
+    left: -5px;
+    color: white;
+    display: none;
+    padding: 1rem;
+    /* text-align: center; */
+    opacity: 1; /* Set initial opacity */
+    transition: 0.5s ;/* Set default transition time and easing function */
+    border-radius: 5px;
+    padding-bottom: 3rem;
+
+}
+.sideBar a{
+    padding: 0.5rem;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 3rem;
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
+}
+.sideBar a:hover{
+    transform: scale(1.05);
+    color: rgb(101, 101, 255);
+}
+.sideBar button{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 20px;
+    border-radius: 50px;
+    font-weight: bolder;
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+}
+.sideBar button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .FlightsSearchVol2 input{
+        /* width: 15%; */
+    }
+    .FlightsSearchVol2 a{
+        width: 8rem;
+   }
+    .FlightsSearchVol2 .submitFlightsResultsVol2{
+        width: 100%;
+   }
+   .leftSideResultsFlights{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:950px){
+    .itemFlightsResults .middleItelFlightsResults p{
+        font-size: 20px ;
+    }
+    #valueHoursFlight {
+        font-size: 13px;
+    }
+    .selectItemFlightsResults{
+        height: 1.5rem;
+        font-size: 18px;
+    }
+    .wifi{
+        font-size: 9px;
+    }
+    .priceFight{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:740px) {
+    .leftSideResultsFlights h2{
+        font-size: 18px;
+    }
+    .leftSideResultsFlights label{
+        font-size: 13px;
+    }
+
+    .FlightsSearchVol2 .submitFlightsResultsVol2{
+        height: 2rem;
+        font-size: 18px;
+        text-align: center;
+        min-width: 80px;
+    }
+    .FlightsSearchVol2{
+        display: flex;
+        align-items: center;
+    }
+    .FlightsSearchVol2 input{
+        height: 0.5rem;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:660px){
+    .barSideSecond {
+        display: block;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-top:0.5rem ;
+    }
+    .leftSideResultsFlights{
+        display: none;
+    }
+    .rightSideResultsFlights{
+        width: 100%;
+    }
+}
+
+
+
+
+/* Flights select */
+.containerFlightsSelect{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.leftSideFlightsSelect{
+    width: 55%;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    padding: 2rem;
+    padding-left: 5rem;
+    display: block;
+}
+.rightSideFlightsSelect{
+    width: 33%;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+}
+.leftSideFlightsSelect input{
+    width: 60%;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid #E2E6EE;
+    /* background: #FFF; */
+    box-shadow: 0px 4px 18px 0px rgba(158, 168, 189, 0.31);
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    font-size: 16px;
+}
+.phoneDate{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.phoneDateDiv{
+    width: 48%;
+}
+.phoneDate input{
+    width: 100%;
+}
+#submitFlightsSelect{
+    background-color: #288FB4;
+    color: white;
+    font-size: 18px;
+    height: 3rem;
+}
+.leftSideFlightsSelect form p{
+    color: red;
+    width: 60%;
+    text-align: center;
+}
+.rightSideFlightsSelect .departure,.return{
+    margin-left: 2rem;
+}
+.rightSideFlightsSelect h1{
+    text-align: center;
+    padding-top: 1rem;
+}
+.departure p, .departure h4 ,.return p , .return h4{
+    padding-left: 2rem;
+    padding-top: 0.3rem;
+}
+
+@media screen and (max-width:1100px) {
+    .leftSideFlightsSelect input{
+        width: 80%;
+    }
+    .phoneDate{
+        width: 80%;
+    }
+    .rightSideFlightsSelect h1{
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .rightSideFlightsSelect h2{
+        font-size: 20px;
+    }
+    .rightSideFlightsSelect{
+        width: 27%;
+        padding: 0.5rem;
+    }
+    .departure p, .departure h4 ,.return p , .return h4{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width:750px){
+    .rightSideFlightsSelect{
+        width: 65%;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .leftSideFlightsSelect{
+        width: 80%;
+    }
+    .leftSideFlightsSelect input{
+        width: 90%;
+    }
+    .phoneDate{
+        width: 90%;
+    }
+}
+
+
+
+
+
+/* Hotels Search */
+.containerCardsHotels{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+    width: 90%;
+    margin: auto;
+
+}
+.containerCardsHotels a{
+    color: black;
+
+}
+.cardHotelSearch{
+    width: 250px;
+    margin-top: 1rem;
+
+
+}
+.cardHotelSearch img{
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+}
+.contNameEtoile{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.cardHotelSearch span{
+    color: #7c7c7c;
+
+}
+.cardHotelSearch:hover{
+    scale: 1.01;
+}
+
+
+
+
+
+/* Hotels results  */
+
+.rightSideCardHotelresult{
+    padding: 1rem;
+    
+}
+.cardHotelResult{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 8rem;
+    border-radius: 10px;
+    border: 0.5px solid rgba(94, 90, 90, 0.5);
+    background: #FFF;
+    margin-top: 0.5rem;
+
+}
+.cardHotelResult .middleInfosCardHotelResults{
+    width: 45%;
+}
+.middleInfosCardHotelResults h2{
+    padding-bottom: 0.5rem;
+
+}
+.middleInfosCardHotelResults h4{
+    margin-top: 0.3rem;
+}
+.cardHotelResult img{
+    width: 22%;
+    width: 11rem;
+    max-height: 8.5rem;
+    border-radius: 5px;
+
+}
+.additionalInfosCardHotel{
+    margin-top: 0.5rem;
+    color: rgb(3, 168, 3);
+
+}
+.rightInfosCardHotelResults{
+    /* background-color: #0066CD; */
+    height: 100%;
+    width: 20%;
+
+}
+.rightInfosCardHotelResults {
+    padding-top: 12% ;
+}
+/* .rightInfosCardHotelResults a:hover{
+    cursor: pointer;
+} */
+
+.rightInfosCardHotelResults a {
+    color: black;
+    background-color: #83BCFF;
+    border: none;
+    width: 80%;
+    margin: auto;
+    height: 2rem;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+.rightInfosCardHotelResults a:hover{
+    cursor: pointer;
+    background-color: rgb(126, 162, 198);
+}
+.rightInfosCardHotelResults h3{
+    font-size: 15px;
+    text-align: right;
+}
+.rightInfosCardHotelResults span{
+    font-size: 15px;
+    text-align: right;
+    margin-left: 24%;
+
+    color: #676768;
+}
+
+@media screen and (max-width:1150px) {
+    .cardHotelResult h2{
+        font-size: 18px;
+    }
+    .cardHotelResult span{
+        font-size: 13px;
+    }
+    .cardHotelResult h4{
+        font-size: 13px;
+    }
+    .cardHotelResult h3{
+        font-size: 13px;
+    }
+    .cardHotelResult p{
+        font-size: 13px;
+    }
+    .cardHotelResult button{
+        font-size: 13px;
+    }
+    .cardHotelResult img{
+        width: 9rem;
+        max-height: 7rem;
+        border-radius: 5px;
+    
+    }
+    
+}
+@media screen and (max-width:840px){
+    .cardHotelResult img{
+        width: 8rem;
+        max-height: 6rem;
+
+    
+    }
+    
+} 
+
+
+
+/* Hotels select */
+
+.topPicturesHotelSelect{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    /* background-color: #0066CD; */
+    width: 80%;
+    margin: auto;
+}
+.topPicturesHotelSelect img{
+    border-radius: 5px;
+}
+.leftSidePicturesHotelSelect{
+    width: 45%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.middleHotelsSelect{
+    display: flex;
+    justify-content: space-evenly;
+}
+.leftSidePicturesHotelSelect img{
+    width: 80%;
+}
+.rightSidePicturesHotelSelect{
+    width: 45%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rightSidePicturesHotelSelect img{
+    width: 42%;
+    margin-top: 1rem;
+}
+.leftSideMiddleHotelsSelect{
+    /* background-color: #279574; */
+    width: 40%;
+    /* padding-left: 5%; */
+}
+
+.partOneLeftSide, .partTwoLeftSide{
+
+    width: 100%;
+    margin-left: 16%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partOneLeftSide h1{
+    /* background-color: #f17676; */
+    width: 100%;
+    font-size: 35px;
+}
+.partOneLeftSide h3{
+    margin-top: 0.5rem;
+    /* background-color: #b79090; */
+    width: 100%;
+    font-size: 22px;
+    color: #646464;
+    padding-bottom: 1rem;
+}
+.partOneLeftSide span{
+    /* background-color: #f17676; */
+    width: 35%;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    color: #767778;
+}
+
+.head{
+    margin-top: 2rem;
+    width: 100%;
+    /* background-color: #0066CD; */
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+
+}
+.head img{
+    width: 50px;
+    border-radius: 50%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.head span{
+    font-size: 10px;
+}
+
+
+.rightSideHotelsSelect{
+    /* background-color: #0066CD; */
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.cartContainerreservation{
+    width: 50%;
+    height: 83%;
+    border-radius: 23px;
+    background: #FAFAFA;
+    box-shadow: 6px 2px 40px -3px rgba(0, 0, 0, 0.39);
+    padding: 2rem;
+}
+
+
+.containerInfosCard{
+    margin-top: 1rem;
+    border-radius: 15px;
+    border: 1px solid black;
+   
+}
+.contTwo{
+    display: flex;
+}
+.containerInfosCard .firstDivs{
+    width: 50%;
+    padding-bottom: 0.5rem;
+   
+    
+    /* background-color: #a228cb; */
+}
+.containerInfosCard .firstDivsRight{
+    border-left: 1px solid black;
+}
+.containerInfosCard .lastDiv{
+    width: 100%;
+    border-top: 1px solid black;
+    padding-bottom: 0.5rem;
+   
+}
+
+.containerInfosCard p{
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.containerInfosCard span{
+    padding: 0.5rem;
+
+}
+
+.contInput{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.submitHotelSelect{
+    width: 100%;
+    border-radius: 20px;
+    background: rgba(232, 4, 73, 0.70);
+    border: none;
+    height: 2.5rem;
+    color: white;
+    font-size: 28px;
+    /* font-weight: bold; */
+}
+.submitHotelSelect:hover{
+    scale: 1.01;
+    cursor: pointer;
+    background: rgba(232, 4, 73, 0.60);
+}
+
+.containerPricesHotelSelect{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    /* background-color: #279574; */
+}
+.containerPricesHotelSelect p{
+    /* background-color: #0066CD; */
+    width: 49%;
+    height: 2rem;
+    font-size: 17px;
+}
+.totalToPay{
+    /* background-color: #0066CD; */
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    border-top: 1px solid black;
+    padding-top: 1rem;
+}
+
+@media screen and (max-width:1000px) {
+    .middleHotelsSelect{
+        
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .middleHotelsSelect{
+        
+    }
+    .testimonial p{
+        /* color: #0066CD; */
+        width: 80%;
+    }
+    .rightSideHotelsSelect p, .rightSideHotelsSelect span{
+        /* color: #0066CD; */
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:640px) {
+    .middleHotelsSelect{
+        display: block;
+
+    }
+    .leftSideMiddleHotelsSelect{
+        width: 90%;
+        margin: auto;
+    }
+    .rightSideHotelsSelect{
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+
+
+
+.blur {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    pointer-events: none; /* Prevent interactions with the blurred background */
+  }
+  
+  .popup {
+    /* Add styling for the popup here */
+    margin-top: 5rem;
+    /* height: 500px; */
+    width: 60%;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 23px;
+    background: #FAFAFA;
+    box-shadow: 6px 2px 40px -3px rgba(72, 71, 71, 0.39);
+    padding: 2rem;
+    /* text-align: center; */
+  }
+
+.itemInput{
+    width: 100%;
+    /* background-color: #279574; */
+    height: 3rem;
+    padding: 1rem;
+}
+.itemInput input{
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    background: var(--grey-2, #E2E6EE);
+    border: 1px solid rgba(226, 230, 238, 1);
+    padding-left:1rem ;
+        margin-top: 0.2rem;
+
+}
+.itemInput2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    /* background-color: #0066CD; */
+    margin-left:5%;
+    margin-top: 1rem;
+}
+.itemItemInput2{
+
+    /* background-color: #279574; */
+    width: 50%;
+}
+.itemInput2 input{
+    width: 90%;
+    height: 3rem;
+    border-radius: 10px;
+    background: var(--grey-2, #E2E6EE);
+    border: 1px solid rgba(226, 230, 238, 1);
+    padding-left:1rem ;
+    margin-top: 0.5rem;
+
+}
+.itemInput label{
+    left: 5px;
+}
+.itemInput .submitCar{
+    width: 95%;
+    background: var(--blue, #288FB4);
+    color: white;
+    font-size: 24px;
+}
+.popup p{
+    text-align: center;
+    /* background-color: #0066CD; */
+    color: red;
+}
+.popup h1{
+    text-align: center;
+
+}
+
+.submitCar:hover{
+    /* background-color: #0066CD; */
+    cursor: pointer;
+    background: var(--blue, #349dc3);
+}
+
+
+
+
+
+  ul {
+    list-style: none;
+  }
+  .list {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    max-height: 150px;
+    overflow: auto;
+  }
+  .list-items {
+    padding: 10px 5px;
+  }
+  .list-items:hover {
+    background-color: #dddddd;
+  }
